@@ -1,0 +1,32 @@
+{
+  "name": "skriver",
+  "version": "0.1.0",
+  "description": "Modular, LLM-assisted story architecture tool",
+  "main": "dist/index.js",
+  "bin": {
+    "skriver": "dist/index.js",
+    "sk": "dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build" : "tsc",
+    "watch": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": ["Writing", "Stories", "LLM", "AI", "Tools"],
+  "author": "Luke Curtis",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.2",
+    "fs-extra": "^11.3.3",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^25.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
