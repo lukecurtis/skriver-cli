@@ -11,9 +11,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tcs",
+    "build": "tsc",
     "watch": "tsc --watch",
-    "prepare": "npx tsc",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "prettier:fix": "prettier --write \"src/**/*.ts\"",
