@@ -11,13 +11,15 @@
     "dist"
   ],
   "scripts": {
-    "build": "tcs",
+    "build": "tsc",
     "watch": "tsc --watch",
     "prepare": "npx tsc",
+    "test": "jest",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "prettier:fix": "prettier --write \"src/**/*.ts\"",
-    "format:check": "prettier --check \"src/**/*.ts\""
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "lint:md": "markdownlint-cli2 \"**/*.md\" --fix"
   },
   "keywords": [
     "Writing",
@@ -41,12 +43,16 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
+    "@types/jest": "^30.0.0",
     "@typescript-eslint/eslint-plugin": "^8.51.0",
     "@typescript-eslint/parser": "^8.51.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
+    "jest": "^30.2.0",
+    "markdownlint-cli2": "^0.20.0",
     "prettier": "^3.7.4",
+    "ts-jest": "^29.4.6",
     "ts-node": "^10.9.2",
     "typescript-eslint": "^8.51.0"
   }
